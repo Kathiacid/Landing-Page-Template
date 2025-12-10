@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Kalle with k</title>
+</head>
+<body>
+    <nav>
+        <section class="main-nav-section">
+            <div class="logo">
+                <span>KALLE</span>
+            </div>
+            <div class="nav-list-container">
+                <ul class="nav-list">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Location</li>
+                <li> About us</li>
+            </div>
+            </ul>
+        </section>
+        <section class="cart-section">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+            
+        </section>
+    </nav>
+    <header>
+        <div class="main-header">
+            <h1>Kalle (with K)</h1>
+            <p>We define the streets through curated drops and timeless essentials. Elevate your daily rotation with authentic gear that speaks louder than words.</p>
+            <a href="#main-container">GO AHEAD</a>
+        </div>
+        <div class="carousel swiper">
+            <div class="img-space swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://streetwear.store/cdn/shop/files/streetwear-hoodie_1800x.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/2ae4f1ca3591e450ba21098ae8b0b3b2.jpg_720x720q80.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.drz.lazcdn.com/static/bd/p/8c9a398a6a97bad7c0ee3a1f69c3d73f.jpg_720x720q80.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g20/M00/A2/B8/rBNaOGHDKp6AfqeDAADs7VWtR3s915.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g22/M01/E4/05/rBNaEmJIc5OAXZI3AAJy-aRfIeY583.jpg">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="products-main-container" id="main-container">
+        <section class="filter">
+            <div class="categories">
+                <h3>Find your style</h3>
+                <ul>
+                    <li>Pants</li>
+                    <li>T-Shirts</li>
+                    <li>Sneakers</li>
+                    <li>Jackets</li>
+                    <li>Hoodies</li>
+                    <li>Caps</li>
+                </ul>
+            </div>
+            <div class="filter-size">
+                <div>
+                    <h3>Size</h3>
+                </div>
+                <ul>
+                    <li><a href="#">XS</li></a>
+                    <li><a href="#">S</li></a>
+                    <li><a href="#">M</li></a>
+                    <li><a href="#">L</li></a>
+                    <li><a href="#">XL</li></a>
+                </ul>
+            </div>
+            <div class="product-color">
+                <h3>Color</h3>
+                <div class="colors">
+                    <div class="border">
+                        <div class="color black"></div>
+                    </div>
+
+                    <div class="border">
+                        <div class="color white"></div>
+                    </div>
+
+                    <div class="border">
+                        <div class="color red"></div>
+                    </div>
+
+                    <div class="border">
+                        <div class="color blue"></div>
+                    </div>
+
+                    <div class="border">
+                        <div class="color gray"></div>
+                    </div>
+                </div>
+                <div class="product-price-filter">
+                    <h3>Price Filter</h3>
+                    <input type="range" id="priceRange" min="0" max="1000" value="500" 
+                    oninput="updatePrice(this.value)">
+                    <div class="price-value">
+                        <span>$0</span>
+                        <span id="current-price">$500</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://nobero.com/cdn/shop/files/1_ddfc289d-355f-4a9f-9647-919134e9627c.jpg?v=1756280494">
+                </div>
+                <div class="product-category">
+                    <span>Pants</span>
+                </div>
+                <div class="product-name">
+                    <span>Urban Utility Cargo Pants</span>
+                </div>
+                <div class="product-description">
+                    <p>Designed for both function and style, these cargo pants feature a durable cotton-twill construction with six functional pockets.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $80
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://trendsplant.com/cdn/shop/files/029940MOPI_EssentialGarmentHeavyweightOversizedT-ShirtPearledIvoryDSCF7881.jpg?v=1753368952&width=1260">
+                </div>
+                <div class="product-category">
+                    <span>T-shirts</span>
+                </div>
+                <div class="product-name">
+                    <span>Essential Heavyweight T-Shirt</span>
+                </div>
+                <div class="product-description">
+                    <p>A timeless classic made from 100% premium organic cotton.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $50
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://www.hommeplus.eu/cdn/shop/files/represent-showcasing-tee-cloud-front-model.webp?v=1761854501&width=1024">
+                </div>
+                <div class="product-category">
+                    <span>T-shirts</span>
+                </div>
+                <div class="product-name">
+                    <span>Retro Horizon Graphic Tee</span>
+                </div>
+                <div class="product-description">
+                    <p>Capture the vintage vibe with this soft-washed graphic t-shirt.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $45
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://m.media-amazon.com/images/I/71R0JeDldcL._AC_UY900_.jpg">
+                </div>
+                <div class="product-category">
+                    <span>Sneakers</span>
+                </div>
+                <div class="product-name">
+                    <span>Velocity Knit Runners</span>
+                </div>
+                <div class="product-description">
+                    <p>Experience ultimate lightweight performance.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $120
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://www.beforethehighstreet.com/cdn/shop/files/MADEN-Retro-Wave-Classic-Court-Sneakers-streetwear-techwear-2.webp?v=1721660339">
+                </div>
+                <div class="product-category">
+                    <span>Sneakers</span>
+                </div>
+                <div class="product-name">
+                    <span>Court Classic Leather Sneakers</span>
+                </div>
+                <div class="product-description">
+                    <p>Clean, minimal, and sophisticated.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $100
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://m.media-amazon.com/images/I/71T5wlDF8jL._AC_UY1000_.jpg">
+                </div>
+                <div class="product-category">
+                    <span>Jackets</span>
+                </div>
+                <div class="product-name">
+                    <span>North Summit Puffer Jacket</span>
+                </div>
+                <div class="product-description">
+                    <p>Stay warm without the bulk. This insulated puffer jacket features water-resistant fabric and a high-neck collar to protect against the elements.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $200
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://coldcultureworldwide.com/cdn/shop/files/curved-hoodie-midnight-blue-4494597.jpg?v=1759891860&width=1000">
+                </div>
+                <div class="product-category">
+                    <span>Hoodies</span>
+                </div>
+                <div class="product-name">
+                    <span>Midnight Fleece Hoodie</span>
+                </div>
+                <div class="product-description">
+                    <p>our new go-to for chilly evenings. This pullover hoodie is made from an ultra-soft fleece blend with a brushed interior for extra warmth.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $95
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://blackout-techwear.co.uk/cdn/shop/files/wearing-woman-techwear-hoodie-jacket-front-side-view-uk.jpg?v=1726506506&width=1946">
+                </div>
+                <div class="product-category">
+                    <span>Hoodies</span>
+                </div>
+                <div class="product-name">
+                    <span>Tech-Zip Active Hoodie</span>
+                </div>
+                <div class="product-description">
+                    <p>Engineered for movement, this full-zip hoodie uses moisture-wicking fabric to keep you dry and comfortable.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $95
+                    </span>
+                </div>
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://www.offwrld-techwear.com/cdn/shop/files/Sc73f5d39d6294e12a527ee0cc5a9c34ae.jpg?v=1686734295&width=1946">
+                </div>
+                <div class="product-category">
+                    <span>Caps</span>
+                </div>
+                <div class="product-name">
+                    <span>Signature Cap</span>
+                </div>
+                <div class="product-description">
+                    <p>Complete your look with this unstructured 6-panel cap.</p>
+                </div>
+                <div class="product-price">
+                    <span>
+                        $36
+                    </span>
+                </div>
+
+                <div class="cart-btn">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    Add to Cart
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#" class="footer-brand">KALLE</a>
+
+        <div class="footer-nav">
+            <a href="#">Pants</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Sneakers</a>
+            <a href="#">Jackets</a>
+            <a href="#">Hoodies</a>
+            <a href="#">Caps</a>
+        </div>
+
+        <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2025 KALLE. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
